@@ -278,7 +278,7 @@ if (cspEnabled) {
 app.listen(PORT, () => {
   const mode = dev ? 'development' : 'production';
   console.log(`Listening to port ${PORT} in ${mode} mode`);
-  console.log(`SSL Enforce Policy: ${process.env.REACT_APP_SHARETRIBE_USING_SSL}`);
+  console.log(`SSL Enforce Policy - ${process.env.REACT_APP_SHARETRIBE_USING_SSL}`);
   if (dev) {
     console.log(`Open http://localhost:${PORT}/ and start hacking!`);
   }
