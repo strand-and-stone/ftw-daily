@@ -108,6 +108,7 @@ if (cspEnabled) {
 // Read more: https://github.com/aredo/express-enforces-ssl
 //
 if (USING_SSL) {
+  console.log(`Enforcing SSL in ${mode} mode`);
   app.use(enforceSsl());
 }
 
