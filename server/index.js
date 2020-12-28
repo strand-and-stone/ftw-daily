@@ -107,6 +107,7 @@ if (cspEnabled) {
 //
 // Read more: https://github.com/aredo/express-enforces-ssl
 //
+console.log(`Force SSL Policy: ${process.env.REACT_APP_SHARETRIBE_USING_SSL}`);
 if (USING_SSL) {
   console.log(`Enforcing SSL in ${mode} mode`);
   app.use(enforceSsl());
